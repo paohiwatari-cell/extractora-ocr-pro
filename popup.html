@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extractora OCR Pro</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <h1>Extractora OCR Pro</h1>
+          <small>OCR local · tablas de talles</small>
+        </div>
+      </header>
+
+      <section class="toolbar">
+        <button id="analyzePageBtn" class="primary">Analizar página</button>
+        <button id="detectAllBtn">Detectar imágenes</button>
+        <button id="selectTableBtn">Tablas probables</button>
+        <button id="processAllBtn">Procesar todo</button>
+      </section>
+
+      <section class="summary-grid">
+        <div class="summary-card">
+          <span>Total</span>
+          <strong id="totalCount">0</strong>
+        </div>
+        <div class="summary-card">
+          <span>Seleccionadas</span>
+          <strong id="selectedCount">0</strong>
+        </div>
+        <div class="summary-card">
+          <span>Procesadas</span>
+          <strong id="processedCount">0</strong>
+        </div>
+      </section>
+
+      <section class="controls">
+        <label class="search-wrap">
+          <input id="filterInput" type="text" placeholder="Buscar por URL, alt, texto o tipo" />
+        </label>
+      </section>
+
+      <section class="panel">
+        <div class="panel-heading">
+          <h2>Imágenes detectadas</h2>
+        </div>
+        <div id="imageList" class="image-list"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-heading">
+          <h2>Resultados</h2>
+          <div class="panel-actions">
+            <button id="saveBtn" class="tiny">Guardar</button>
+            <button id="exportCsvBtn" class="tiny">CSV</button>
+            <button id="exportJsonBtn" class="tiny">JSON</button>
+          </div>
+        </div>
+
+        <div id="resultTable" class="result-table"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-heading">
+          <h2>Log</h2>
+        </div>
+        <div id="logPanel" class="log-panel"></div>
+      </section>
+    </div>
+
+    <script src="libs/ocr-engine.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Extractora OCR Pro",
+  "version": "0.1.0",
+  "description": "Extensión portátil para detectar y extraer texto y tablas desde imágenes de páginas web.",
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ],
+  "action": {
+    "default_title": "Extractora OCR Pro",
+    "default_popup": "popup.html"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "project": "Extractora OCR Pro",
+    "version": "0.1.0",
+    "description": "Datos de ejemplo para validar extracción de tablas de talles y medidas."
+  },
+  "records": [
+    {
+      "provider": "Danitex",
+      "line": "Basic",
+      "model": "Remera básica algodón",
+      "type": "Remera",
+      "fit": "Regular",
+      "material": "100% algodón",
+      "weight": "180 g/m²",
+      "sizes": [
+        { "size": "S", "measurements": { "Ancho": "46 cm", "Largo": "68 cm", "Manga": "20 cm" } },
+        { "size": "M", "measurements": { "Ancho": "48 cm", "Largo": "70 cm", "Manga": "21 cm" } },
+        { "size": "L", "measurements": { "Ancho": "50 cm", "Largo": "72 cm", "Manga": "22 cm" } }
+      ]
+    },
+    {
+      "provider": "Ronaldtex",
+      "line": "Performance",
+      "model": "Remera Dry fit",
+      "type": "Remera",
+      "fit": "Slim",
+      "material": "Poliéster 88% / Elastano 12%",
+      "weight": "155 g/m²",
+      "sizes": [
+        { "size": "M", "measurements": { "Pecho": "106 cm", "Largo": "73 cm", "Manga": "22 cm" } },
+        { "size": "L", "measurements": { "Pecho": "110 cm", "Largo": "75 cm", "Manga": "23 cm" } },
+        { "size": "XL", "measurements": { "Pecho": "116 cm", "Largo": "78 cm", "Manga": "24 cm" } }
+      ]
+    },
+    {
+      "provider": "Kingtex",
+      "line": "Urban",
+      "model": "Remera oversize",
+      "type": "Remera",
+      "fit": "Oversize",
+      "material": "Algodón 100%",
+      "weight": "190 g/m²",
+      "sizes": [
+        { "size": "M", "measurements": { "Ancho": "52 cm", "Largo": "72 cm", "Hombro": "46 cm" } },
+        { "size": "L", "measurements": { "Ancho": "54 cm", "Largo": "74 cm", "Hombro": "48 cm" } },
+        { "size": "XL", "measurements": { "Ancho": "56 cm", "Largo": "76 cm", "Hombro": "50 cm" } }
+      ]
+    }
+  ]
+}
